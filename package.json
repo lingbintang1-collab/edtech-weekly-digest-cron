@@ -1,0 +1,13 @@
+{
+  "name": "edtech-weekly-digest-cron",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "schedule": "tsx weekly_digest_schedule.ts",
+    "test": "tsx --test weekly_digest_schedule.test.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0"
+  }
+}
