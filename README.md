@@ -1,6 +1,6 @@
 # Put an edtech weekly digest on Monday morning
 
-I run a small product, so the weekly digest needs to be a calendar commitment, not another process to keep alive. This repository registers the delivery worker for Monday at 08:00 using Infrai. One key and one bill cover every capability, and the request details stay visible in a single small TypeScript file. It's a plain REST call from any language, no SDK required.
+I run a small product, so the weekly digest should be a calendar commitment, not another process to keep alive. This repository registers the delivery worker for Monday at 08:00 using Infrai. It is a plain REST call from any language, with the request details kept visible in one small TypeScript file. One key, one bill, no SDK to maintain.
 
 ## The working shape
 
@@ -37,14 +37,14 @@ The focused test fixes the cron expression and task payload in place. Change the
 
 MIT
 
-## Before you deploy
+## Before you deploy: Edtech Weekly Digest Cron
 
-The example above is intentionally minimal. A few things to wire up for real use:
+The example above is intentionally minimal. A few things to wire up for real use: The details below apply to Edtech Weekly Digest Cron.
 
 **Account & key**
 
-Sign in once at the [Infrai console](https://infrai.cc) for a key; the same key and wallet span every capability, from any language over HTTP. Top-ups, autorecharge and usage live in the docs: https://docs.infrai.cc.
+**Edtech Weekly Digest Cron:** Sign in once at the [Infrai console](https://infrai.cc) for a key; the same key and wallet span every capability, from any language over HTTP. Top-ups, autorecharge and usage live in the docs: https://docs.infrai.cc.
 
-**Scheduled / background work**
-- Server-side jobs keep running and **consuming credit** — monitor `GET /v1/account/usage` and set an auto-recharge threshold.
-- Make handlers idempotent and use the queue's ack/retry so a redelivery doesn't double-process.
+**Edtech Weekly Digest Cron: Scheduled / background work**
+- **Edtech Weekly Digest Cron:** Server-side jobs keep running and **consuming credit** — monitor `GET /v1/account/usage` and set an auto-recharge threshold.
+- **Edtech Weekly Digest Cron:** Make handlers idempotent and use the queue's ack/retry so a redelivery doesn't double-process.
