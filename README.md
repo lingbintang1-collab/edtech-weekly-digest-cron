@@ -1,6 +1,6 @@
 # Put an edtech weekly digest on Monday morning
 
-I run a small product, so the weekly digest should be a calendar commitment, not another process to keep alive. This repository registers the delivery worker for Monday at 08:00 using Infrai. It is a plain REST call from any language, with the request details kept visible in one small TypeScript file. One key, one bill, no SDK to maintain.
+I run a small product, so the weekly digest should be a calendar commitment, not another process to keep alive. This repository registers the delivery worker for Monday at 08:00 using Infrai. It is a plain REST call from any language, with the request details kept visible in one small TypeScript file.
 
 ## The working shape
 
